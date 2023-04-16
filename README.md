@@ -39,6 +39,12 @@ To use AutoGPT4ALL-UI, follow the steps below:
 6. Follow the on-screen prompts and instructions to complete the installation process.
 7. After the installation is complete, open your browser and visit http://localhost:9600 to access the GPT4ALL user interface.
 
+TL;DR
+1. Clone repo.
+2. cd into folder
+3. sudo chmod +x autogpt4all.sh
+4. ./autogpt4all.sh
+
 # <img src="https://i.pinimg.com/originals/7e/2a/eb/7e2aeb1567e91bfc2404cecca6aceecd.gif" width="125"> Manual Installation
 
 If you prefer a manual installation, follow the step-by-step installation guide provided in the repository. This guide walks you through the process using easy-to-understand language and covers all the steps required to set up GPT4ALL-UI on your system.
