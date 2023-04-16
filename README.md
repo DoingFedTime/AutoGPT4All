@@ -7,6 +7,12 @@ THE "AutoGPT4ALL-UI.sh" is the ONLY script that has been tested, repeatedly, and
 
 You have been warned. 
 
+** UPDATE **
+
+It's come to my attention that shortly after I posted this script the original GPT4ALL-UI was actually updated to do things like fix the .bin file. 
+You can still use this script in spite of that if you want to (it's not going to do any harm from my understanding). When asked if you want to install python-venv, select "y". When asked ANYTHING else select "N". 
+
+
 # <img src="https://img1.picmix.com/output/stamp/normal/0/9/7/2/522790_2c559.gif" width="75"> AutoGPT4ALL-UI
 
 **AutoGPT4ALL-UI** is a script designed to automate the installation and setup process for GPT4ALL and its user interface. The script takes care of downloading the necessary repositories, installing required dependencies, and configuring the application for seamless use. This repository provides scripts for macOS, Linux (Debian-based), and Windows.
