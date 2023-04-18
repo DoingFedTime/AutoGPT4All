@@ -59,8 +59,17 @@ cd
 cd Downloads/
 cp gpt4all-ui/convert-gpt4all-to-ggml.py llama.cpp/
 cd llama.cpp/
-python3 migrate-ggml-2023-03-30-pr613.py gpt4all-lora-quantized-ggml.bin ../gpt4all-ui/models/gpt4all-lora-quantized-ggml.bin
-cd ../gpt4all-ui/ 
+
+# Detect operating system and use the correct Python version
+OS=$(uname)
+if [ "$OS" = "Darwin" ]; then
+    PYTHON_CMD="python3"
+else
+    PYTHON_CMD="python3.11"
+fi
+
+$PYTHON_CMD migrate-ggml-2023-03-30-pr613.py gpt4all-lora-quantized-ggml.bin ../gpt4all-ui/models/gpt4all-lora-quantized-ggml.bin
+cd ../gpt4all-ui/
 bash run.sh
 colored_echo "green" "Open your browser and go to localhost:9600"
 colored_echo "red" "Start this manually by going into the gpt4all-ui folder and running: bash run.sh"
